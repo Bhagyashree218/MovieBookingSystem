@@ -1,28 +1,50 @@
-﻿using Kemar.MBS.Repository.Context;
+﻿using AutoMapper;
+using Kemar.MBS.Model.Show.Request;
+using Kemar.MBS.Model.Show.Response;
+using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
 using Kemar.MBS.Repository.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
     public class ShowRepository : GenericRepository<Show>, IShowRepository
     {
         private readonly KemarMBSDbContext _context;
+        private readonly IMapper _mapper;
 
-        public ShowRepository(KemarMBSDbContext context) : base(context)
+        public ShowRepository(KemarMBSDbContext context, IMapper mapper)
+            : base(context)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        public IEnumerable<Show> GetShowsByMovie(int movieId)
+        public async Task CreateShowAsync(ShowCreateRequestDto request)
         {
-            return _context.Shows.Where(s => s.MovieId == movieId).ToList();
+            var show = _mapper.Map<Show>(request);
+            await _context.Shows.AddAsync(show);
+            await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<Show> GetShowsByMovieAndDate(int movieId, DateTime date)
+        public async Task<ShowResponseDto> GetShowByIdAsync(int showId)
         {
-            return _context.Shows
-                           .Where(s => s.MovieId == movieId && s.ShowDate.Date == date.Date)
-                           .ToList();
+            var show = await _context.Shows
+                .Include(s => s.Movie)
+                .Include(s => s.Screen)
+                .FirstOrDefaultAsync(x => x.ShowId == showId);
+
+            return _mapper.Map<ShowResponseDto>(show);
+        }
+
+        public async Task<IEnumerable<ShowResponseDto>> GetAllShowsAsync()
+        {
+            var shows = await _context.Shows
+                .Include(s => s.Movie)
+                .Include(s => s.Screen)
+                .ToListAsync();
+
+            return _mapper.Map<IEnumerable<ShowResponseDto>>(shows);
         }
     }
 }

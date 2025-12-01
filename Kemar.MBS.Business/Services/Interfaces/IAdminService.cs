@@ -5,6 +5,6 @@ namespace Kemar.MBS.Business.Services.Interfaces
 {
     public interface IAdminService
     {
-        AdminResponseDto Login(AdminLoginRequestDto request);
+        Task<AdminResponseDto> LoginAdminAsync(AdminLoginRequestDto request);
     }
 }

@@ -27,5 +27,23 @@ namespace Kemar.MBS.API.Controllers
             return Ok(new { result });
         }
 
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginRequestDto request)
+        {
+            var user = await _userService.LoginUserAsync(request);
+            if (user == null) return Unauthorized("Invalid credentials");
+
+            return Ok(user);
+        }
+
+        [HttpGet("profile/{id}")]
+        public async Task<IActionResult> Profile(int id)
+        {
+            var profile = await _userService.GetUserProfileAsync(id);
+            if (profile == null) return NotFound();
+
+            return Ok(profile);
+        }
+
     }
 }

@@ -5,10 +5,9 @@ namespace Kemar.MBS.Business.Services.Interfaces
 {
     public interface IMovieService
     {
-        MovieResponseDto CreateMovie(MovieCreateRequestDto request);
-        MovieResponseDto UpdateMovie(MovieUpdateRequestDto request);
-        bool DeleteMovie(int movieId);
-        MovieResponseDto GetMovieById(int movieId);
-        IEnumerable<MovieResponseDto> GetAllMovies();
+        Task CreateMovieAsync(MovieCreateRequestDto request);
+        //Task UpdateMovieAsync(MovieUpdateRequestDto request);
+        Task<MovieResponseDto> GetMovieByIdAsync(int movieId);
+        Task<IEnumerable<MovieResponseDto>> GetAllMoviesAsync();
     }
 }

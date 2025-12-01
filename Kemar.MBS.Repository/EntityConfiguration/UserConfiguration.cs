@@ -24,7 +24,7 @@ namespace Kemar.MBS.Repository.EntityConfiguration
 
             builder.Property(x => x.Password)
                    .IsRequired()
-                   .HasMaxLength(20);
+                   .HasMaxLength(100);
 
             //Relations
             builder.HasMany(x => x.Bookings)

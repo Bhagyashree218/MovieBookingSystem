@@ -5,8 +5,8 @@ namespace Kemar.MBS.Business.Services.Interfaces
 {
     public interface IShowService
     {
-        ShowResponseDto CreateShow(ShowCreateRequestDto request);
-        IEnumerable<ShowResponseDto> GetShowsByMovie(int movieId);
-        IEnumerable<ShowResponseDto> GetShowsByMovieAndDate(int movieId, DateTime date);
+        Task CreateShowAsync(ShowCreateRequestDto request);
+        Task<ShowResponseDto> GetShowByIdAsync(int showId);
+        Task<IEnumerable<ShowResponseDto>> GetAllShowsAsync();
     }
 }

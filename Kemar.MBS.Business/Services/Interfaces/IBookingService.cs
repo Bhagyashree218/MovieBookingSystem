@@ -5,9 +5,8 @@ namespace Kemar.MBS.Business.Services.Interfaces
 {
     public interface IBookingService
     {
-        BookingResponseDto CreateBooking(BookingRequestDto request);
-        IEnumerable<BookingResponseDto> GetBookingsByUser(int userId);
-        IEnumerable<BookingResponseDto> GetBookingsByShow(int showId);
-        bool CancelBooking(int bookingId);
+        Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
+        Task<BookingResponseDto> GetBookingByIdAsync(int bookingId);
+        Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId);
     }
 }

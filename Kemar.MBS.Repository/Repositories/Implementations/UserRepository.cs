@@ -5,6 +5,7 @@ using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
 using Kemar.MBS.Repository.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using BCrypt.Net;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
@@ -22,6 +23,7 @@ namespace Kemar.MBS.Repository.Repositories.Implementations
         public async Task/*<UserResponseDto>*/ RegisterUserAsync(RegisterRequestDto request)
         {
             var user = _mapper.Map<User>(request);
+            user.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
             //return _mapper.Map<UserResponseDto>(user);
@@ -33,6 +35,14 @@ namespace Kemar.MBS.Repository.Repositories.Implementations
                 .FirstOrDefaultAsync(x => x.UserEmail == email);
 
             return _mapper.Map<UserResponseDto>(user);
+        }
+
+        public async Task<UserProfileDto> GetUserByIdAsync(int userId)
+        {
+            var user = await _context.Users
+                .FirstOrDefaultAsync(x => x.UserId == userId);
+
+            return _mapper.Map<UserProfileDto>(user);
         }
     }
 }

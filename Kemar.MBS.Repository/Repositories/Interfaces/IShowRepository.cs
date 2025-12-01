@@ -1,10 +1,13 @@
-﻿using Kemar.MBS.Repository.Entity;
+﻿using Kemar.MBS.Model.Show.Request;
+using Kemar.MBS.Model.Show.Response;
+using Kemar.MBS.Repository.Entity;
 
 namespace Kemar.MBS.Repository.Repositories.Interfaces
 {
     public interface IShowRepository : IRepository<Show>
     {
-        IEnumerable<Show> GetShowsByMovie(int movieId);
-        IEnumerable<Show> GetShowsByMovieAndDate(int movieId, DateTime date);
+        Task CreateShowAsync(ShowCreateRequestDto request);
+        Task<ShowResponseDto> GetShowByIdAsync(int showId);
+        Task<IEnumerable<ShowResponseDto>> GetAllShowsAsync();
     }
 }

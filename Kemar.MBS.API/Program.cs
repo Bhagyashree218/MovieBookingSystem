@@ -17,7 +17,25 @@ builder.Services.AddDbContext<KemarMBSDbContext>(options =>
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IShowService, ShowService>();
+builder.Services.AddScoped<ISeatService, SeatService>();
+builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<ITheatreService, TheatreService>();
+builder.Services.AddScoped<IScreenService, ScreenService>();
+
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IShowRepository, ShowRepository>();
+builder.Services.AddScoped<ISeatRepository, SeatRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<ITheatreRepository, TheatreRepository>();
+builder.Services.AddScoped<IScreenRepository, ScreenRepository>();
+
 
 // Add services to the container.
 builder.Services.AddControllers();

@@ -27,10 +27,21 @@ namespace Kemar.MBS.Business.Services.Implementations
         {
             var user = await _userRepository.GetUserByEmailAsync(request.UserEmail);
 
-            if (user == null || user.Password != request.Password)
+            if (user == null)
                 return null;
 
+            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(request.Password, user.Password);
+
+            if (!isPasswordValid)
+                return null;
+
+
             return _mapper.Map<UserResponseDto>(user);
+        }
+        public async Task<UserProfileDto> GetUserProfileAsync(int userId)
+        {
+            var user = await _userRepository.GetUserByIdAsync(userId);
+            return _mapper.Map<UserProfileDto>(user);
         }
     }
 }

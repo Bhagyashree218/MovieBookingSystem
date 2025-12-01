@@ -7,5 +7,6 @@ namespace Kemar.MBS.Business.Services.Interfaces
     {
         Task<string> RegisterUserAsync(RegisterRequestDto request);
         Task<UserResponseDto> LoginUserAsync(LoginRequestDto request);
+        Task<UserProfileDto> GetUserProfileAsync(int UserId);
     }
 }

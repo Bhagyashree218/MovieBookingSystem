@@ -8,5 +8,7 @@ namespace Kemar.MBS.Repository.Repositories.Interfaces
     {
         Task/*<UserResponseDto>*/ RegisterUserAsync(RegisterRequestDto request);
         Task<UserResponseDto> GetUserByEmailAsync(string email);
+        Task<UserProfileDto> GetUserByIdAsync(int userId);
+
     }
 }

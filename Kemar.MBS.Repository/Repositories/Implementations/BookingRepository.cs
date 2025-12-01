@@ -1,40 +1,58 @@
-﻿using Kemar.MBS.Repository.Context;
+﻿using AutoMapper;
+using Kemar.MBS.Model.Booking.Request;
+using Kemar.MBS.Model.Booking.Response;
+using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
 using Kemar.MBS.Repository.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
     public class BookingRepository : GenericRepository<Booking>, IBookingRepository
     {
         private readonly KemarMBSDbContext _context;
+        private readonly IMapper _mapper;
 
-        public BookingRepository(KemarMBSDbContext context) : base(context)
+        public BookingRepository(KemarMBSDbContext context, IMapper mapper)
+            : base(context)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        public IEnumerable<Booking> GetBookingsByUser(int userId)
+        public async Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request)
         {
-            return _context.Bookings
-                           .Where(b => b.UserId == userId)
-                           .ToList();
-        }
-
-        public IEnumerable<Booking> GetBookingsByShow(int showId)
-        {
-            return _context.Bookings
-                           .Where(b => b.ShowId == showId)
-                           .ToList();
-        }
-
-        public void CancelBooking(int bookingId)
-        {
-            var booking = _context.Bookings.FirstOrDefault(b => b.BookingId == bookingId);
-            if (booking != null)
+            var booking = new Booking
             {
-                booking.IsActive = false;
-                _context.Bookings.Update(booking);
-            }
+                UserId = request.UserId,
+                ShowId = request.ShowId,
+                BookingTime = DateTime.Now,
+                PaymentStatus = "Pending",
+                TotalAmount = 0
+            };
+
+            await _context.Bookings.AddAsync(booking);
+            await _context.SaveChangesAsync();
+
+            return _mapper.Map<BookingResponseDto>(booking);
+        }
+
+        public async Task<BookingResponseDto> GetBookingByIdAsync(int bookingId)
+        {
+            var booking = await _context.Bookings
+                .Include(b => b.BookingSeats)
+                .FirstOrDefaultAsync(x => x.BookingId == bookingId);
+
+            return _mapper.Map<BookingResponseDto>(booking);
+        }
+
+        public async Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId)
+        {
+            var bookings = await _context.Bookings
+                .Where(x => x.UserId == userId)
+                .ToListAsync();
+
+            return _mapper.Map<IEnumerable<BookingResponseDto>>(bookings);
         }
     }
 }
