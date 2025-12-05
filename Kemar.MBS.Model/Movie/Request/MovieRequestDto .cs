@@ -1,6 +1,8 @@
-﻿namespace Kemar.MBS.Model.Movie.Request
+﻿using Kemar.MBS.Model.Common;
+
+namespace Kemar.MBS.Model.Movie.Request
 {
-    public class MovieUpdateRequestDto
+    public class MovieRequestDto : BaseRequestDto
     {
         public int MovieId { get; set; }
         public string Title { get; set; }
