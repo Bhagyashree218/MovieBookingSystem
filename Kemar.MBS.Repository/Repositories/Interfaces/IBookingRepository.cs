@@ -1,13 +1,12 @@
 ﻿using Kemar.MBS.Model.Booking.Request;
 using Kemar.MBS.Model.Booking.Response;
-using Kemar.MBS.Repository.Entity;
+using Kemar.MBS.Model.Seat.Response;
 
-namespace Kemar.MBS.Repository.Repositories.Interfaces
+public interface IBookingRepository
 {
-    public interface IBookingRepository : IRepository<Booking>
-    {
-        Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
-        Task<BookingResponseDto> GetBookingByIdAsync(int bookingId);
-        Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId);
-    }
+    Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
+    Task<BookingResponseDto> GetBookingByIdAsync(int bookingId);//User-to view a single ticket
+                                                                //Admin-to see booking details
+    Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId);//user-Mybookings/History 
+    Task<IEnumerable<SeatBookedDto>> GetBookedSeatsByShowAsync(int showId);
 }

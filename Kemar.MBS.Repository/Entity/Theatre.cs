@@ -6,7 +6,7 @@ namespace Kemar.MBS.Repository.Entity
     {
         public int TheatreId {  get; set; }     //Primary Key
         public int CityId { get; set; }     // Foreign Key 
-        public string Name { get; set; }
+        public string TheatreName { get; set; }
         public string Address { get; set; }
 
         public City City { get; set; }

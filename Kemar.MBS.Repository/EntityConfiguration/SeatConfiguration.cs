@@ -16,7 +16,7 @@ namespace Kemar.MBS.Repository.EntityConfiguration
 
             builder.Property(x => x.SeatNumber)
                    .IsRequired()
-                   .HasMaxLength(10);
+                   .HasMaxLength(11);
 
             builder.Property(x => x.RowNumber)
                    .IsRequired()

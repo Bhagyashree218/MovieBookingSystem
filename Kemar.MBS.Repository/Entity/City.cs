@@ -6,7 +6,7 @@ namespace Kemar.MBS.Repository.Entity
     public class City : BaseEntity
     {
         public int CityId { get; set; } //Primary Key
-        public string Name { get; set; }
+        public string CityName { get; set; }
 
         public ICollection<Theatre> Theatres { get; set; }
     }

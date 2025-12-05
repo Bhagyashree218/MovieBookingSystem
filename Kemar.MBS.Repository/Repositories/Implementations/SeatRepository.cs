@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Kemar.MBS.Model.Seats.Requests;
 using Kemar.MBS.Model.Seat.Response;
+using Kemar.MBS.Model.Seats.Requests;
 using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
 using Kemar.MBS.Repository.Repositories.Interfaces;
@@ -8,32 +8,44 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
-    public class SeatRepository : GenericRepository<Seat>, ISeatRepository
+    public class SeatRepository : ISeatRepository
     {
         private readonly KemarMBSDbContext _context;
         private readonly IMapper _mapper;
 
         public SeatRepository(KemarMBSDbContext context, IMapper mapper)
-            : base(context)
         {
             _context = context;
             _mapper = mapper;
         }
 
-        public async Task CreateSeatsAsync(SeatCreateRequestDto request)
+        public async Task AddUpdateAsync(SeatRequestDto request)
         {
             foreach (var item in request.Seats)
             {
-                var seat = new Seat
-                {
-                    ScreenId = request.ShowId,
-                    SeatNumber = item.SeatNumber,
-                    RowNumber = item.Row,
-                    SeatType = item.SeatType,
-                    IsAvailable = true
-                };
+                var existing = await _context.Seats
+                    .FirstOrDefaultAsync(x =>
+                        x.ScreenId == request.ScreenId &&
+                        x.SeatNumber.ToLower() == item.SeatNumber.ToLower());
 
-                await _context.Seats.AddAsync(seat);
+                if (existing != null)
+                {
+                    existing.SeatType = item.SeatType;
+                    existing.RowNumber = item.Row;
+                }
+                else
+                {
+                    var seat = new Seat
+                    {
+                        ScreenId = request.ScreenId,
+                        SeatNumber = item.SeatNumber,
+                        RowNumber = item.Row,
+                        SeatType = item.SeatType,
+                        IsAvailable = true
+                    };
+
+                    await _context.Seats.AddAsync(seat);
+                }
             }
 
             await _context.SaveChangesAsync();
@@ -45,13 +57,36 @@ namespace Kemar.MBS.Repository.Repositories.Implementations
             return _mapper.Map<SeatResponseDto>(seat);
         }
 
-        public async Task<IEnumerable<SeatResponseDto>> GetSeatsByShowIdAsync(int showId)
+        public async Task<IEnumerable<SeatResponseDto>> GetSeatsByScreenIdAsync(int screenId)
         {
             var seats = await _context.Seats
-                .Where(x => x.ScreenId == showId)
+                .Where(x => x.ScreenId == screenId)
+                .OrderBy(x => x.RowNumber)
+                .ThenBy(x => x.SeatNumber)
                 .ToListAsync();
 
             return _mapper.Map<IEnumerable<SeatResponseDto>>(seats);
+        }
+
+        public async Task<IEnumerable<SeatResponseDto>> GetSeatByFilterAsync(SeatFilterDto filter)
+        {
+            var query = _context.Seats.AsQueryable();
+
+            if (filter.ScreenId.HasValue)
+                query = query.Where(x => x.ScreenId == filter.ScreenId.Value);
+
+            if (!string.IsNullOrEmpty(filter.SeatType))
+                query = query.Where(x => x.SeatType == filter.SeatType);
+
+            if (filter.IsAvailable.HasValue)
+                query = query.Where(x => x.IsAvailable == filter.IsAvailable.Value);
+
+            var result = await query
+                .OrderBy(x => x.RowNumber)
+                .ThenBy(x => x.SeatNumber)
+                .ToListAsync();
+
+            return _mapper.Map<IEnumerable<SeatResponseDto>>(result);
         }
     }
 }

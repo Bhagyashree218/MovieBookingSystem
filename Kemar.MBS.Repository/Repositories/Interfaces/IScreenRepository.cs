@@ -1,11 +1,9 @@
-﻿using Kemar.MBS.Model.Screen.Response;
-using Kemar.MBS.Repository.Entity;
-
-namespace Kemar.MBS.Repository.Repositories.Interfaces
+﻿using Kemar.MBS.Model.Screen.Request;
+using Kemar.MBS.Model.Screen.Response;
+public interface IScreenRepository 
 {
-    public interface IScreenRepository : IRepository<Screen>
-    {
-        Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId);
-        Task<ScreenResponseDto> GetScreenByIdAsync(int screenId);
-    }
+    Task AddUpdateAsync(ScreenRequestDto request);
+    Task<ScreenResponseDto> GetScreenByIdAsync(int screenId);
+    Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId);
+    Task<IEnumerable<ScreenResponseDto>> GetScreenByFilterAsync(ScreenFilterDto filter);
 }

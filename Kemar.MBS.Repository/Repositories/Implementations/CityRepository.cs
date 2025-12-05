@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Kemar.MBS.Model.City.Request;
 using Kemar.MBS.Model.City.Response;
 using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
@@ -7,13 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
-    public class CityRepository : GenericRepository<City>, ICityRepository
+    public class CityRepository : ICityRepository
     {
         private readonly KemarMBSDbContext _context;
         private readonly IMapper _mapper;
 
         public CityRepository(KemarMBSDbContext context, IMapper mapper)
-            : base(context)
         {
             _context = context;
             _mapper = mapper;
@@ -21,14 +21,70 @@ namespace Kemar.MBS.Repository.Repositories.Implementations
 
         public async Task<IEnumerable<CityResponseDto>> GetAllCitiesAsync()
         {
-            var cities = await _context.Cities.ToListAsync();
+            var cities = await _context.Cities
+                .OrderBy(x => x.CityName)
+                .ToListAsync();
+
             return _mapper.Map<IEnumerable<CityResponseDto>>(cities);
+        }
+
+        public async Task AddUpdateCityAsync(CityRequestDto request)
+        {
+            var existingByName = await _context.Cities
+                .FirstOrDefaultAsync(x => x.CityName.ToLower() == request.CityName.ToLower());
+
+            // UPDATE LOGIC
+            if (request.CityId > 0)
+            {
+                var existing = await _context.Cities
+                    .FirstOrDefaultAsync(x => x.CityId == request.CityId);
+
+                if (existing == null)
+                    throw new Exception("City not found.");
+
+                // Check duplicate only if name belongs to another ID
+                if (existingByName != null && existingByName.CityId != request.CityId)
+                    throw new Exception("City name already exists.");
+
+                existing.CityName = request.CityName;
+                await _context.SaveChangesAsync();
+                return;
+            }
+
+            // ADD LOGIC
+            if (existingByName != null)
+                throw new Exception("City name already exists.");
+
+            var city = new City
+            {
+                CityName = request.CityName
+            };
+
+            await _context.Cities.AddAsync(city);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<CityResponseDto> GetCityByIdAsync(int cityId)
         {
-            var city = await _context.Cities.FirstOrDefaultAsync(x => x.CityId == cityId);
+            var city = await _context.Cities
+                .FirstOrDefaultAsync(x => x.CityId == cityId);
+
             return _mapper.Map<CityResponseDto>(city);
+        }
+
+        public async Task<IEnumerable<CityResponseDto>> GetCityByFilterAsync(CityFilterDto filter)
+        {
+            var query = _context.Cities.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filter.CityName))
+            {
+                query = query.Where(x =>
+                    x.CityName.ToLower().Contains(filter.CityName.ToLower())
+                );
+            }
+
+            var result = await query.ToListAsync();
+            return _mapper.Map<IEnumerable<CityResponseDto>>(result);
         }
     }
 }

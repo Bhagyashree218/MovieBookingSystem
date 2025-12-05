@@ -4,11 +4,11 @@ using Kemar.MBS.Repository.Entity;
 
 namespace Kemar.MBS.Repository.Repositories.Interfaces
 {
-    public interface IAdminRepository : IRepository<Admin>
+    public interface IAdminRepository 
     {
         Task<AdminResponseDto> CreateAdminAsync(AdminLoginRequestDto request);
         Task<AdminResponseDto> GetAdminByIdAsync(int adminId);
         Task<IEnumerable<AdminResponseDto>> GetAllAdminsAsync();
-        Task<Admin> GetAdminByEmailAsync(string email);
+        Task<Admin> GetAdminForAuthAsync(string email);  // Authentication only
     }
 }

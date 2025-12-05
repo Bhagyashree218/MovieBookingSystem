@@ -14,7 +14,7 @@ namespace Kemar.MBS.Repository.EntityConfiguration
             builder.Property(x => x.TheatreId)
                     .ValueGeneratedOnAdd();
 
-            builder.Property(x => x.Name)
+            builder.Property(x => x.TheatreName)
                    .IsRequired()
                    .HasMaxLength(50);
 

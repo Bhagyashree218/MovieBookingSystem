@@ -8,13 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
-    public class AdminRepository : GenericRepository<Admin>, IAdminRepository
+    public class AdminRepository : IAdminRepository
     {
         private readonly KemarMBSDbContext _context;
         private readonly IMapper _mapper;
 
         public AdminRepository(KemarMBSDbContext context, IMapper mapper)
-            : base(context)
         {
             _context = context;
             _mapper = mapper;
@@ -23,17 +22,19 @@ namespace Kemar.MBS.Repository.Repositories.Implementations
         public async Task<AdminResponseDto> CreateAdminAsync(AdminLoginRequestDto request)
         {
             var admin = _mapper.Map<Admin>(request);
+            admin.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
+
             await _context.Admins.AddAsync(admin);
             await _context.SaveChangesAsync();
 
             return _mapper.Map<AdminResponseDto>(admin);
         }
 
-        public async Task<Admin> GetAdminByEmailAsync(string email)
+        public async Task<Admin> GetAdminForAuthAsync(string email)
         {
-            return await _context.Admins.FirstOrDefaultAsync(x => x.AdminEmail == email);
+            return await _context.Admins
+                .FirstOrDefaultAsync(x => x.AdminEmail == email);
         }
-
 
         public async Task<AdminResponseDto> GetAdminByIdAsync(int adminId)
         {

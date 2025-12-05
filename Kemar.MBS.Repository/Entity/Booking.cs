@@ -11,15 +11,14 @@ namespace Kemar.MBS.Repository.Entity
         public DateTime BookingTime { get; set; }
         public decimal TotalAmount { get; set; }
 
-        // Payment Fields
-        public string PaymentStatus { get; set; }         // Pending, Success, Failed
-        public string TransactionId { get; set; }
-        public string PaymentMethod { get; set; }
+        public string? PaymentStatus { get; set; }         // Pending, Success, Failed
+        public string? TransactionId { get; set; }
+        public string? PaymentMethod { get; set; }
         public DateTime? PaymentDate { get; set; }
 
-        // analytics for Admin
-        public decimal? DiscountApplied { get; set; }
-        public string Source { get; set; } 
+       
+        public decimal? DiscountApplied { get; set; }    // analytics for Admin
+        public string? Source { get; set; } 
 
         public User User { get; set; }
         public Show Show { get; set; }

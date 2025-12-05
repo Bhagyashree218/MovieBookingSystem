@@ -1,58 +1,160 @@
-﻿using AutoMapper;
-using Kemar.MBS.Model.Booking.Request;
+﻿using Kemar.MBS.Model.Booking.Request;
 using Kemar.MBS.Model.Booking.Response;
+using Kemar.MBS.Model.Seat.Response;
 using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
-using Kemar.MBS.Repository.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kemar.MBS.Repository.Repositories.Implementations
 {
-    public class BookingRepository : GenericRepository<Booking>, IBookingRepository
+    public class BookingRepository : IBookingRepository
     {
         private readonly KemarMBSDbContext _context;
-        private readonly IMapper _mapper;
 
-        public BookingRepository(KemarMBSDbContext context, IMapper mapper)
-            : base(context)
+        public BookingRepository(KemarMBSDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request)
         {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            var show = await _context.Shows
+                .Include(s => s.Movie)
+                .Include(s => s.Screen)
+                .FirstOrDefaultAsync(x => x.ShowId == request.ShowId);
+
+            if (show == null)
+                throw new InvalidOperationException("Show not found.");
+
+            var seats = await _context.Seats
+                .Where(x => request.SeatIds.Contains(x.SeatId))
+                .ToListAsync();
+
+            if (seats.Count != request.SeatIds.Count)
+                throw new InvalidOperationException("One or more seats not found.");
+
+            if (seats.Any(x => x.ScreenId != show.ScreenId))
+                throw new InvalidOperationException("One or more seats do not belong to the show's screen.");
+
+            var alreadyBookedSeatIds = await _context.BookingSeats
+                .Include(bs => bs.Booking)
+                .Where(bs => request.SeatIds.Contains(bs.SeatId) && bs.Booking.ShowId == request.ShowId)
+                .Select(bs => bs.SeatId)
+                .ToListAsync();
+
+            if (alreadyBookedSeatIds.Any())
+                throw new InvalidOperationException("One or more seats are already booked.");
+
+            var totalAmount = show.Price * request.SeatIds.Count;
+
             var booking = new Booking
             {
                 UserId = request.UserId,
                 ShowId = request.ShowId,
                 BookingTime = DateTime.Now,
-                PaymentStatus = "Pending",
-                TotalAmount = 0
+                TotalAmount = totalAmount,
+                PaymentStatus = "Confirmed"
             };
 
             await _context.Bookings.AddAsync(booking);
             await _context.SaveChangesAsync();
 
-            return _mapper.Map<BookingResponseDto>(booking);
+            var bookingSeats = seats.Select(seat => new BookingSeat
+            {
+                BookingId = booking.BookingId,
+                SeatId = seat.SeatId
+            }).ToList();
+
+            await _context.BookingSeats.AddRangeAsync(bookingSeats);
+            await _context.SaveChangesAsync();
+
+            await transaction.CommitAsync();
+
+            return await GetBookingByIdAsync(booking.BookingId);
         }
 
         public async Task<BookingResponseDto> GetBookingByIdAsync(int bookingId)
         {
             var booking = await _context.Bookings
+                .Include(b => b.User)
+                .Include(b => b.Show)
+                    .ThenInclude(s => s.Movie)
+                .Include(b => b.Show)
+                    .ThenInclude(s => s.Screen)
+                        .ThenInclude(sc => sc.Theatre)
+                            .ThenInclude(t => t.City)
                 .Include(b => b.BookingSeats)
+                    .ThenInclude(bs => bs.Seat)
                 .FirstOrDefaultAsync(x => x.BookingId == bookingId);
 
-            return _mapper.Map<BookingResponseDto>(booking);
+            if (booking == null)
+                return null;
+
+            return new BookingResponseDto
+            {
+                BookingId = booking.BookingId,
+                UserName = booking.User.UserName,
+                TheatreName = booking.Show.Screen.Theatre.TheatreName,
+                ScreenName = booking.Show.Screen.ScreenName,
+                MovieTitle = booking.Show.Movie.Title,
+                ShowDate = booking.Show.ShowDate,
+                StartTime = booking.Show.StartTime,
+                Seats = booking.BookingSeats.Select(x => x.Seat.SeatNumber).ToList(),
+                TotalAmount = booking.TotalAmount,
+                PaymentStatus = booking.PaymentStatus,
+                BookingTime = booking.BookingTime,
+                CityName = booking.Show.Screen.Theatre.City.CityName
+            };
         }
 
         public async Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId)
         {
             var bookings = await _context.Bookings
+                .Include(b => b.User)
+                .Include(b => b.Show)
+                    .ThenInclude(s => s.Movie)
+                .Include(b => b.Show)
+                    .ThenInclude(s => s.Screen)
+                        .ThenInclude(sc => sc.Theatre)
+                            .ThenInclude(t => t.City)
+                .Include(b => b.BookingSeats)
+                    .ThenInclude(bs => bs.Seat)
                 .Where(x => x.UserId == userId)
                 .ToListAsync();
 
-            return _mapper.Map<IEnumerable<BookingResponseDto>>(bookings);
+            return bookings.Select(booking => new BookingResponseDto
+            {
+                BookingId = booking.BookingId,
+                UserName = booking.User.UserName,
+                TheatreName = booking.Show.Screen.Theatre.TheatreName,
+                ScreenName = booking.Show.Screen.ScreenName,
+                MovieTitle = booking.Show.Movie.Title,
+                ShowDate = booking.Show.ShowDate,
+                StartTime = booking.Show.StartTime,
+                Seats = booking.BookingSeats.Select(x => x.Seat.SeatNumber).ToList(),
+                TotalAmount = booking.TotalAmount,
+                PaymentStatus = booking.PaymentStatus,
+                BookingTime = booking.BookingTime,
+                CityName = booking.Show.Screen.Theatre.City.CityName
+            });
+        }
+
+        public async Task<IEnumerable<SeatBookedDto>> GetBookedSeatsByShowAsync(int showId)
+        {
+            var bookedSeats = await _context.BookingSeats
+                .Include(bs => bs.Seat)
+                .Include(bs => bs.Booking)
+                .Where(bs => bs.Booking.ShowId == showId)
+                .Select(bs => new SeatBookedDto
+                {
+                    SeatId = bs.SeatId,
+                    SeatNumber = bs.Seat.SeatNumber
+                })
+                .ToListAsync();
+
+            return bookedSeats;
         }
     }
 }

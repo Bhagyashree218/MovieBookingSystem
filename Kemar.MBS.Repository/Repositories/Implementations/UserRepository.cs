@@ -3,46 +3,56 @@ using Kemar.MBS.Model.User.Request;
 using Kemar.MBS.Model.User.Response;
 using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Entity;
-using Kemar.MBS.Repository.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using BCrypt.Net;
 
-namespace Kemar.MBS.Repository.Repositories.Implementations
+public class UserRepository : IUserRepository
 {
-    public class UserRepository : GenericRepository<User>, IUserRepository
+    private readonly KemarMBSDbContext _context;
+    private readonly IMapper _mapper;
+
+    public UserRepository(KemarMBSDbContext context, IMapper mapper)
     {
-        private readonly KemarMBSDbContext _context;
-        private readonly IMapper _mapper;
+        _context = context;
+        _mapper = mapper;
+    }
 
-        public UserRepository(KemarMBSDbContext context, IMapper mapper) : base(context)
-        {
-            _context = context;
-            _mapper = mapper;
-        }
+    public async Task RegisterUserAsync(RegisterRequestDto request)
+    {
+        var user = _mapper.Map<User>(request);
+        user.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
-        public async Task/*<UserResponseDto>*/ RegisterUserAsync(RegisterRequestDto request)
-        {
-            var user = _mapper.Map<User>(request);
-            user.Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
-            await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync();
-            //return _mapper.Map<UserResponseDto>(user);
-        }
+        await _context.Users.AddAsync(user);
+        await _context.SaveChangesAsync();
+    }
 
-        public async Task<UserResponseDto> GetUserByEmailAsync(string email)
-        {
-            var user = await _context.Users
-                .FirstOrDefaultAsync(x => x.UserEmail == email);
+    // INTERNAL USE ONLY: For login password verification
+    public async Task<User> GetUserForAuthAsync(string email)
+    {
+        return await _context.Users
+            .FirstOrDefaultAsync(x => x.UserEmail == email);
+    }
 
-            return _mapper.Map<UserResponseDto>(user);
-        }
+    public async Task<UserResponseDto> GetUserByEmailAsync(string email)
+    {
+        var user = await _context.Users
+            .FirstOrDefaultAsync(x => x.UserEmail == email);
 
-        public async Task<UserProfileDto> GetUserByIdAsync(int userId)
-        {
-            var user = await _context.Users
-                .FirstOrDefaultAsync(x => x.UserId == userId);
+        return _mapper.Map<UserResponseDto>(user);
+    }
 
-            return _mapper.Map<UserProfileDto>(user);
-        }
+    public async Task<UserProfileDto> GetUserByIdAsync(int userId)
+    {
+        var user = await _context.Users
+            .FirstOrDefaultAsync(x => x.UserId == userId);
+
+        return _mapper.Map<UserProfileDto>(user);
+    }
+
+    public async Task<LoginResponseDto> GetLoginResponseDtoAsync(int userId)
+    {
+        var user = await _context.Users
+            .FirstOrDefaultAsync(x => x.UserId == userId);
+
+        return _mapper.Map<LoginResponseDto>(user);
     }
 }
