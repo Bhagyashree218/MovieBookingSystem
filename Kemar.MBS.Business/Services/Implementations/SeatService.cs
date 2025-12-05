@@ -1,6 +1,6 @@
 ﻿using Kemar.MBS.Business.Services.Interfaces;
-using Kemar.MBS.Model.Seats.Requests;
 using Kemar.MBS.Model.Seat.Response;
+using Kemar.MBS.Model.Seats.Requests;
 using Kemar.MBS.Repository.Repositories.Interfaces;
 
 namespace Kemar.MBS.Business.Services.Implementations
@@ -14,19 +14,16 @@ namespace Kemar.MBS.Business.Services.Implementations
             _seatRepository = seatRepository;
         }
 
-        public async Task CreateSeatsAsync(SeatCreateRequestDto request)
-        {
-            await _seatRepository.CreateSeatsAsync(request);
-        }
+        public Task AddUpdateAsync(SeatRequestDto request)
+            => _seatRepository.AddUpdateAsync(request);
 
-        public async Task<SeatResponseDto> GetSeatByIdAsync(int seatId)
-        {
-            return await _seatRepository.GetSeatByIdAsync(seatId);
-        }
+        public Task<SeatResponseDto> GetSeatByIdAsync(int seatId)
+            => _seatRepository.GetSeatByIdAsync(seatId);
 
-        public async Task<IEnumerable<SeatResponseDto>> GetSeatsByShowIdAsync(int showId)
-        {
-            return await _seatRepository.GetSeatsByShowIdAsync(showId);
-        }
+        public Task<IEnumerable<SeatResponseDto>> GetSeatsByScreenIdAsync(int screenId)
+            => _seatRepository.GetSeatsByScreenIdAsync(screenId);
+
+        public Task<IEnumerable<SeatResponseDto>> GetSeatByFilterAsync(SeatFilterDto filter)
+            => _seatRepository.GetSeatByFilterAsync(filter);
     }
 }

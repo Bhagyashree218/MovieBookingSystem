@@ -1,10 +1,10 @@
-﻿using Kemar.MBS.Model.Screen.Response;
+﻿using Kemar.MBS.Model.Screen.Request;
+using Kemar.MBS.Model.Screen.Response;
 
-namespace Kemar.MBS.Business.Services.Interfaces
+public interface IScreenService
 {
-    public interface IScreenService
-    {
-        Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId);
-        Task<ScreenResponseDto> GetScreenByIdAsync(int screenId);
-    }
+    Task AddUpdateAsync(ScreenRequestDto request);
+    Task<ScreenResponseDto> GetScreenByIdAsync(int screenId);
+    Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId);
+    Task<IEnumerable<ScreenResponseDto>> GetScreenByFilterAsync(ScreenFilterDto filter);
 }

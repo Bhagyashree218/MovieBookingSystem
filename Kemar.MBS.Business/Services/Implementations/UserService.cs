@@ -1,5 +1,5 @@
-﻿using AutoMapper;
-using Kemar.MBS.Business.Services.Interfaces;
+﻿using Kemar.MBS.Business.Services.Interfaces;
+using Kemar.MBS.Model.Common;
 using Kemar.MBS.Model.User.Request;
 using Kemar.MBS.Model.User.Response;
 using Kemar.MBS.Repository.Repositories.Interfaces;
@@ -9,39 +9,40 @@ namespace Kemar.MBS.Business.Services.Implementations
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository, IMapper mapper)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
-            _mapper = mapper;
         }
 
-        public async Task<string> RegisterUserAsync(RegisterRequestDto request)
+        public async Task<ResultModel> RegisterUserAsync(RegisterRequestDto request)
         {
+            var existing = await _userRepository.GetUserByEmailAsync(request.UserEmail);
+            if (existing != null)
+                return ResultModel.Duplicate("Email already exists");
+
             await _userRepository.RegisterUserAsync(request);
-            return "Registration successful";  
+            return ResultModel.Created(null, "Registration successful");
         }
 
-        public async Task<UserResponseDto> LoginUserAsync(LoginRequestDto request)
+        public async Task<LoginResponseDto> LoginUserAsync(LoginRequestDto request)
         {
-            var user = await _userRepository.GetUserByEmailAsync(request.UserEmail);
+            var userEntity = await _userRepository.GetUserForAuthAsync(request.UserEmail);
 
-            if (user == null)
+            if (userEntity == null)
                 return null;
 
-            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(request.Password, user.Password);
+            bool isValid = BCrypt.Net.BCrypt.Verify(request.Password, userEntity.Password);
 
-            if (!isPasswordValid)
+            if (!isValid)
                 return null;
 
-
-            return _mapper.Map<UserResponseDto>(user);
+            return await _userRepository.GetLoginResponseDtoAsync(userEntity.UserId);
         }
+
         public async Task<UserProfileDto> GetUserProfileAsync(int userId)
         {
-            var user = await _userRepository.GetUserByIdAsync(userId);
-            return _mapper.Map<UserProfileDto>(user);
+            return await _userRepository.GetUserByIdAsync(userId);
         }
     }
 }

@@ -3,7 +3,6 @@ using Kemar.MBS.Business.Services.Interfaces;
 using Kemar.MBS.Model.Admin.Request;
 using Kemar.MBS.Model.Admin.Response;
 using Kemar.MBS.Repository.Repositories.Interfaces;
-using BCrypt.Net;
 
 namespace Kemar.MBS.Business.Services.Implementations
 {
@@ -20,14 +19,15 @@ namespace Kemar.MBS.Business.Services.Implementations
 
         public async Task<AdminResponseDto> LoginAdminAsync(AdminLoginRequestDto request)
         {
-            var admin = await _adminRepository.GetAdminByEmailAsync(request.AdminEmail);
-            if (admin == null) return null;
+            var admin = await _adminRepository.GetAdminForAuthAsync(request.AdminEmail);
+            if (admin == null)
+                return null;
 
             bool valid = BCrypt.Net.BCrypt.Verify(request.Password, admin.Password);
-            if (!valid) return null;
+            if (!valid)
+                return null;
 
             return _mapper.Map<AdminResponseDto>(admin);
-
         }
     }
 }

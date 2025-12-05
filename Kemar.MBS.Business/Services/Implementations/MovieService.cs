@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Kemar.MBS.Business.Services.Interfaces;
+﻿using Kemar.MBS.Business.Services.Interfaces;
 using Kemar.MBS.Model.Movie.Request;
 using Kemar.MBS.Model.Movie.Response;
 using Kemar.MBS.Repository.Repositories.Interfaces;
@@ -15,24 +14,16 @@ namespace Kemar.MBS.Business.Services.Implementations
             _movieRepository = movieRepository;
         }
 
-        public async Task CreateMovieAsync(MovieCreateRequestDto request)
-        {
-            await _movieRepository.CreateMovieAsync(request);
-        }
+        public Task AddUpdateAsync(MovieRequestDto request)
+            => _movieRepository.AddUpdateAsync(request);
 
-        //public async Task UpdateMovieAsync(MovieUpdateRequestDto request)
-        //{
-        //    await _movieRepository.UpdateMovieAsync(request);
-        //}
+        public Task<MovieResponseDto> GetMovieByIdAsync(int movieId)
+            => _movieRepository.GetMovieByIdAsync(movieId);
 
-        public async Task<MovieResponseDto> GetMovieByIdAsync(int movieId)
-        {
-            return await _movieRepository.GetMovieByIdAsync(movieId);
-        }
+        public Task<IEnumerable<MovieResponseDto>> GetAllMoviesAsync()
+            => _movieRepository.GetAllMoviesAsync();
 
-        public async Task<IEnumerable<MovieResponseDto>> GetAllMoviesAsync()
-        {
-            return await _movieRepository.GetAllMoviesAsync();
-        }
+        public Task<IEnumerable<MovieResponseDto>> GetMovieByFilterAsync(MovieFilterDto filter)
+            => _movieRepository.GetMovieByFilterAsync(filter);
     }
 }

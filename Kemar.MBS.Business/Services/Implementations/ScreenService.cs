@@ -1,26 +1,24 @@
-﻿using Kemar.MBS.Business.Services.Interfaces;
+﻿using Kemar.MBS.Model.Screen.Request;
 using Kemar.MBS.Model.Screen.Response;
-using Kemar.MBS.Repository.Repositories.Interfaces;
 
-namespace Kemar.MBS.Business.Services.Implementations
+public class ScreenService : IScreenService
 {
-    public class ScreenService : IScreenService
+    private readonly IScreenRepository _screenRepository;
+
+    public ScreenService(IScreenRepository screenRepository)
     {
-        private readonly IScreenRepository _screenRepository;
-
-        public ScreenService(IScreenRepository screenRepository)
-        {
-            _screenRepository = screenRepository;
-        }
-
-        public async Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId)
-        {
-            return await _screenRepository.GetScreensByTheatreAsync(theatreId);
-        }
-
-        public async Task<ScreenResponseDto> GetScreenByIdAsync(int screenId)
-        {
-            return await _screenRepository.GetScreenByIdAsync(screenId);
-        }
+        _screenRepository = screenRepository;
     }
+
+    public Task AddUpdateAsync(ScreenRequestDto request)
+        => _screenRepository.AddUpdateAsync(request);
+
+    public Task<ScreenResponseDto> GetScreenByIdAsync(int screenId)
+        => _screenRepository.GetScreenByIdAsync(screenId);
+
+    public Task<IEnumerable<ScreenResponseDto>> GetScreensByTheatreAsync(int theatreId)
+        => _screenRepository.GetScreensByTheatreAsync(theatreId);
+
+    public Task<IEnumerable<ScreenResponseDto>> GetScreenByFilterAsync(ScreenFilterDto filter)
+        => _screenRepository.GetScreenByFilterAsync(filter);
 }

@@ -1,10 +1,10 @@
-﻿using Kemar.MBS.Model.Theatre.Response;
+﻿using Kemar.MBS.Model.Theatre.Request;
+using Kemar.MBS.Model.Theatre.Responses;
 
-namespace Kemar.MBS.Business.Services.Interfaces
+public interface ITheatreService
 {
-    public interface ITheatreService
-    {
-        Task<IEnumerable<TheatreResponseDto>> GetTheatresByCityAsync(int cityId);
-        Task<TheatreResponseDto> GetTheatreByIdAsync(int theatreId);
-    }
+    Task AddUpdateAsync(TheatreRequestDto request);
+    Task<TheatreResponseDto> GetTheatreByIdAsync(int theatreId);
+    Task<IEnumerable<TheatreResponseDto>> GetTheatreByCityAsync(int cityId);
+    Task<IEnumerable<TheatreResponseDto>> GetTheatreByFilterAsync(TheatreFilterDto filter);
 }

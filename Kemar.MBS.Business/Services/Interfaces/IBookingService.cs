@@ -1,12 +1,12 @@
 ﻿using Kemar.MBS.Model.Booking.Request;
 using Kemar.MBS.Model.Booking.Response;
+using Kemar.MBS.Model.Seat.Response;
 
-namespace Kemar.MBS.Business.Services.Interfaces
+public interface IBookingService
 {
-    public interface IBookingService
-    {
-        Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
-        Task<BookingResponseDto> GetBookingByIdAsync(int bookingId);
-        Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId);
-    }
+    Task<BookingResponseDto> CreateBookingAsync(BookingRequestDto request);
+    Task<BookingResponseDto> GetBookingByIdAsync(int bookingId);
+    Task<IEnumerable<BookingResponseDto>> GetBookingsByUserAsync(int userId);
+    Task<IEnumerable<SeatBookedDto>> GetBookedSeatsByShowAsync(int showId);
+
 }

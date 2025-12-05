@@ -1,4 +1,5 @@
 ﻿using Kemar.MBS.Business.Services.Interfaces;
+using Kemar.MBS.Model.City.Request;
 using Kemar.MBS.Model.City.Response;
 using Kemar.MBS.Repository.Repositories.Interfaces;
 
@@ -13,14 +14,16 @@ namespace Kemar.MBS.Business.Services.Implementations
             _cityRepository = cityRepository;
         }
 
-        public async Task<IEnumerable<CityResponseDto>> GetAllCitiesAsync()
-        {
-            return await _cityRepository.GetAllCitiesAsync();
-        }
+        public Task<IEnumerable<CityResponseDto>> GetAllCitiesAsync()
+            => _cityRepository.GetAllCitiesAsync();
 
-        public async Task<CityResponseDto> GetCityByIdAsync(int cityId)
-        {
-            return await _cityRepository.GetCityByIdAsync(cityId);
-        }
+        public Task AddUpdateCityAsync(CityRequestDto request)
+            => _cityRepository.AddUpdateCityAsync(request);
+
+        public Task<CityResponseDto> GetCityByIdAsync(int cityId)
+            => _cityRepository.GetCityByIdAsync(cityId);
+
+        public Task<IEnumerable<CityResponseDto>> GetCityByFilterAsync(CityFilterDto filter)
+            => _cityRepository.GetCityByFilterAsync(filter);
     }
 }
