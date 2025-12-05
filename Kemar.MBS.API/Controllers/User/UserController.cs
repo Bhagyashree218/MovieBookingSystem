@@ -1,7 +1,8 @@
-﻿using Kemar.MBS.Business.Services.Interfaces;
+﻿using Kemar.MBS.API.Core.Helper;
+using Kemar.MBS.Business.Services.Interfaces;
 using Kemar.MBS.Model.User.Request;
+using Kemar.MBS.Model.User.Response;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace Kemar.MBS.API.Controllers
 {
@@ -19,31 +20,28 @@ namespace Kemar.MBS.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
-            var result =  await _userService.RegisterUserAsync(request);
-
-            if (result == null)
-                return BadRequest("Email already exists.");
-
-            return Ok(new { result });
+            var result = await _userService.RegisterUserAsync(request);
+            return CommonHelper.ReturnActionResultByStatus(result, this);
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequestDto request)
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            var user = await _userService.LoginUserAsync(request);
-            if (user == null) return Unauthorized("Invalid credentials");
+            var loginResponse = await _userService.LoginUserAsync(request);
+            if (loginResponse == null)
+                return Unauthorized("Invalid credentials");
 
-            return Ok(user);
+            return Ok(loginResponse);
         }
 
         [HttpGet("profile/{id}")]
         public async Task<IActionResult> Profile(int id)
         {
             var profile = await _userService.GetUserProfileAsync(id);
-            if (profile == null) return NotFound();
+            if (profile == null)
+                return NotFound();
 
             return Ok(profile);
         }
-
     }
 }

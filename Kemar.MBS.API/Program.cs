@@ -5,9 +5,6 @@ using Kemar.MBS.Repository.Context;
 using Kemar.MBS.Repository.Repositories.Implementations;
 using Kemar.MBS.Repository.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using AutoMapper;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 

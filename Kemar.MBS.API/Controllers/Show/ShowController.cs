@@ -2,39 +2,41 @@
 using Kemar.MBS.Model.Show.Request;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Kemar.MBS.API.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class ShowController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ShowController : ControllerBase
+    private readonly IShowService _showService;
+
+    public ShowController(IShowService showService)
     {
-        private readonly IShowService _showService;
+        _showService = showService;
+    }
 
-        public ShowController(IShowService showService)
-        {
-            _showService = showService;
-        }
+    [HttpPost("AddOrUpdate")]
+    public async Task<IActionResult> AddOrUpdate([FromBody] ShowRequestDto dto)
+    {
+        await _showService.AddUpdateAsync(dto);
+        return Ok("Success");
+    }
 
-        [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] ShowCreateRequestDto dto)
-        {
-            await _showService.CreateShowAsync(dto);
-            return Ok("Show created successfully");
-        }
+    [HttpGet("GetById/{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var result = await _showService.GetShowByIdAsync(id);
+        if (result == null) return NotFound();
+        return Ok(result);
+    }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
-        {
-            var show = await _showService.GetShowByIdAsync(id);
-            if (show == null) return NotFound();
-            return Ok(show);
-        }
+    [HttpGet("GetAll")]
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok(await _showService.GetAllShowsAsync());
+    }
 
-        [HttpGet("all")]
-        public async Task<IActionResult> GetAll()
-        {
-            var shows = await _showService.GetAllShowsAsync();
-            return Ok(shows);
-        }
+    [HttpPost("GetByFilter")]
+    public async Task<IActionResult> GetByFilter([FromBody] ShowFilterDto filter)
+    {
+        return Ok(await _showService.GetShowByFilterAsync(filter));
     }
 }

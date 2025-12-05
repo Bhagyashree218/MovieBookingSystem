@@ -1,4 +1,5 @@
 ﻿using Kemar.MBS.Business.Services.Interfaces;
+using Kemar.MBS.Model.City.Request;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Kemar.MBS.API.Controllers
@@ -14,18 +15,31 @@ namespace Kemar.MBS.API.Controllers
             _cityService = cityService;
         }
 
-        [HttpGet("all")]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _cityService.GetAllCitiesAsync());
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpPost("AddOrUpdate")]
+        public async Task<IActionResult> AddOrUpdate([FromBody] CityRequestDto dto)
+        {
+            await _cityService.AddUpdateCityAsync(dto);
+            return Ok("Success");
+        }
+
+        [HttpGet("GetById/{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
             var city = await _cityService.GetCityByIdAsync(id);
             if (city == null) return NotFound();
             return Ok(city);
+        }
+
+        [HttpPost("GetByFilter")]
+        public async Task<IActionResult> GetByFilter([FromBody] CityFilterDto filter)
+        {
+            return Ok(await _cityService.GetCityByFilterAsync(filter));
         }
     }
 }

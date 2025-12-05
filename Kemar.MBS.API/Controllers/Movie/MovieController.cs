@@ -15,32 +15,32 @@ namespace Kemar.MBS.API.Controllers
             _movieService = movieService;
         }
 
-        [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] MovieCreateRequestDto dto)
+        [HttpPost("AddOrUpdate")]
+        public async Task<IActionResult> AddOrUpdate([FromBody] MovieRequestDto dto)
         {
-            await _movieService.CreateMovieAsync(dto);
-            return Ok("Movie created successfully");
+            await _movieService.AddUpdateAsync(dto);
+            return Ok("Success");
         }
 
-        //[HttpPut("update")]
-        //public async Task<IActionResult> Update([FromBody] MovieUpdateRequestDto dto)
-        //{
-        //    await _movieService.UpdateMovieAsync(dto);
-        //    return Ok("Movie updated successfully");
-        //}
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("GetById/{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
             var movie = await _movieService.GetMovieByIdAsync(id);
             if (movie == null) return NotFound();
             return Ok(movie);
         }
 
-        [HttpGet("all")]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             var movies = await _movieService.GetAllMoviesAsync();
+            return Ok(movies);
+        }
+
+        [HttpPost("GetByFilter")]
+        public async Task<IActionResult> GetByFilter([FromBody] MovieFilterDto filter)
+        {
+            var movies = await _movieService.GetMovieByFilterAsync(filter);
             return Ok(movies);
         }
     }

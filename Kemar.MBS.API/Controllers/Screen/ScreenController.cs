@@ -1,31 +1,42 @@
 ﻿using Kemar.MBS.Business.Services.Interfaces;
+using Kemar.MBS.Model.Screen.Request;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Kemar.MBS.API.Controllers
+[ApiController]
+[Route("api/[controller]")]
+public class ScreenController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ScreenController : ControllerBase
+    private readonly IScreenService _screenService;
+
+    public ScreenController(IScreenService screenService)
     {
-        private readonly IScreenService _screenService;
+        _screenService = screenService;
+    }
 
-        public ScreenController(IScreenService screenService)
-        {
-            _screenService = screenService;
-        }
+    [HttpPost("AddOrUpdate")]
+    public async Task<IActionResult> AddOrUpdate([FromBody] ScreenRequestDto dto)
+    {
+        await _screenService.AddUpdateAsync(dto);
+        return Ok("Success");
+    }
 
-        [HttpGet("theatre/{theatreId}")]
-        public async Task<IActionResult> GetByTheatre(int theatreId)
-        {
-            return Ok(await _screenService.GetScreensByTheatreAsync(theatreId));
-        }
+    [HttpGet("GetById/{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var result = await _screenService.GetScreenByIdAsync(id);
+        if (result == null) return NotFound();
+        return Ok(result);
+    }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
-        {
-            var screen = await _screenService.GetScreenByIdAsync(id);
-            if (screen == null) return NotFound();
-            return Ok(screen);
-        }
+    [HttpGet("GetByTheatre/{theatreId}")]
+    public async Task<IActionResult> GetByTheatre(int theatreId)
+    {
+        return Ok(await _screenService.GetScreensByTheatreAsync(theatreId));
+    }
+
+    [HttpPost("GetByFilter")]
+    public async Task<IActionResult> GetByFilter([FromBody] ScreenFilterDto filter)
+    {
+        return Ok(await _screenService.GetScreenByFilterAsync(filter));
     }
 }
