@@ -1,0 +1,125 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Kemar.Add.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Kemar.Add.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kemar.Add.Model.dll": {}
+        }
+      },
+      "Kemar.Add.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Kemar.Add.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Kemar.Add.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kemar.Add.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kemar.Add.Model/1.0.0": {
+      "type": "project",
+      "path": "../Kemar.Add.Model/Kemar.Add.Model.csproj",
+      "msbuildProject": "../Kemar.Add.Model/Kemar.Add.Model.csproj"
+    },
+    "Kemar.Add.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Kemar.Add.Repository/Kemar.Add.Repository.csproj",
+      "msbuildProject": "../Kemar.Add.Repository/Kemar.Add.Repository.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Kemar.Add.Model >= 1.0.0",
+      "Kemar.Add.Repository >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Bhagyashree Thorat\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Business\\Kemar.Add.Business.csproj",
+      "projectName": "Kemar.Add.Business",
+      "projectPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Business\\Kemar.Add.Business.csproj",
+      "packagesPath": "C:\\Users\\Bhagyashree Thorat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Business\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Bhagyashree Thorat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Model\\Kemar.Add.Model.csproj": {
+              "projectPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Model\\Kemar.Add.Model.csproj"
+            },
+            "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Repository\\Kemar.Add.Repository.csproj": {
+              "projectPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.Add.Repository\\Kemar.Add.Repository.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

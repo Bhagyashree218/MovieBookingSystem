@@ -1,0 +1,40 @@
+wwwroot\media\movies\aasha\banner.jpg
+wwwroot\media\movies\aasha\poster.jpg
+wwwroot\media\movies\Avatar\banner.webp
+wwwroot\media\movies\Avatar\cast1.jpg
+wwwroot\media\movies\Avatar\cast2.jpg
+wwwroot\media\movies\Avatar\cast3.webp
+wwwroot\media\movies\Avatar\cast4.webp
+wwwroot\media\movies\Avatar\cast5.jpg
+wwwroot\media\movies\Avatar\poster 2.jpg
+wwwroot\media\movies\Avatar\poster.jpg
+wwwroot\media\movies\Avatar\posterhd.jpg
+wwwroot\media\movies\Avatar\posterhorizontal.png
+wwwroot\media\movies\dhurandhar\banner.jpg
+wwwroot\media\movies\dhurandhar\banner2.jpg
+wwwroot\media\movies\dhurandhar\banner3.avif
+wwwroot\media\movies\dhurandhar\poster.jpg
+wwwroot\media\movies\dhurandhar\poster2.jpg
+wwwroot\media\movies\FiveNightsatFreddys2\banner.jpg
+wwwroot\media\movies\FiveNightsatFreddys2\poster.jpg
+wwwroot\media\movies\ikkis\poster.jpg
+wwwroot\media\movies\kiskiskopyarkaroo2\banner.jpg
+wwwroot\media\movies\kiskiskopyarkaroo2\poster.jpg
+wwwroot\media\movies\mastiii4\poster.jpg
+wwwroot\media\movies\moana2\poster.jpg
+wwwroot\media\movies\mufasathelionking\banner.jpeg
+wwwroot\media\movies\mufasathelionking\banner3.webp
+wwwroot\media\movies\mufasathelionking\poster.jpg
+wwwroot\media\movies\mufasathelionking\poster2.jpg
+wwwroot\media\movies\sirai\poster.jpg
+wwwroot\media\movies\tereIshkme\banner.jpg
+wwwroot\media\movies\tereIshkme\poster.jpg
+wwwroot\media\movies\tumerimainteramainteratumeri\poster.jpg
+wwwroot\media\movies\zootopia2\banner2 - Copy.jpg
+wwwroot\media\movies\zootopia2\banner2.jpg
+wwwroot\media\movies\zootopia2\poster.jpg
+wwwroot\media\movies\zootopia2\Thumb.jpg
+wwwroot\media\trailers\Tere Ishk Mein Trailer (Hindi) Dhanush, Kriti S AR Rahman Aanand L Rai Bhushan K 28 Nov (2160 X 3840).webm
+wwwroot\media\trailers\traileravatar.webm
+wwwroot\media\trailers\trailerdhurandhar.webm
+wwwroot\test.txt

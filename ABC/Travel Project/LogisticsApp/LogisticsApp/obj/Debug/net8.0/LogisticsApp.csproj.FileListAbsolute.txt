@@ -1,0 +1,28 @@
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.exe
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.deps.json
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.runtimeconfig.json
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.pdb
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.AssemblyInfoInputs.cache
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.AssemblyInfo.cs
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.csproj.CoreCompileInputs.cache
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\refint\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.pdb
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.genruntimeconfig.cache
+C:\Users\Bhagyashree Thorat\source\repos\LogisticsApp\LogisticsApp\obj\Debug\net8.0\ref\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.exe
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.deps.json
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.runtimeconfig.json
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\bin\Debug\net8.0\LogisticsApp.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.AssemblyInfoInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.AssemblyInfo.cs
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.csproj.CoreCompileInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\refint\LogisticsApp.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\LogisticsApp.genruntimeconfig.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\Travel Project\LogisticsApp\LogisticsApp\obj\Debug\net8.0\ref\LogisticsApp.dll

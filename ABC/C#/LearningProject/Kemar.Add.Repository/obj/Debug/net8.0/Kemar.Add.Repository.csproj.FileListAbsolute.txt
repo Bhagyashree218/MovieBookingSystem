@@ -1,0 +1,15 @@
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\bin\Debug\net8.0\Kemar.Add.Repository.deps.json
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\bin\Debug\net8.0\Kemar.Add.Repository.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\bin\Debug\net8.0\Kemar.Add.Repository.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\bin\Debug\net8.0\Kemar.Add.Model.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\bin\Debug\net8.0\Kemar.Add.Model.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.csproj.AssemblyReference.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.AssemblyInfoInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.AssemblyInfo.cs
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Ad.6445D202.Up2Date
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\refint\Kemar.Add.Repository.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\Kemar.Add.Repository.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Repository\obj\Debug\net8.0\ref\Kemar.Add.Repository.dll

@@ -1,0 +1,543 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\movie\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\movie\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\show\\response\\showresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\core\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:core\\helper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\show\\showcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\show\\showcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\city\\request\\cityfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\show\\request\\showrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\show\\request\\showfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\theatre\\responses\\theatreresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\theatre\\requests\\theatrefilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\repositories\\implementations\\showrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\repositories\\implementations\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\entity\\show.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\entity\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\booking\\request\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF242845-F5F8-438B-9E64-A3E52EF5DDA1}|..\\Kemar.MBS.Business\\Kemar.MBS.Business.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.business\\services\\implementations\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\city\\response\\cityresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\entity\\bookingseat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\entity\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\booking\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\booking\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\city\\request\\cityrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\city\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\city\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\user\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\repositories\\implementations\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\repositories\\interfaces\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF242845-F5F8-438B-9E64-A3E52EF5DDA1}|..\\Kemar.MBS.Business\\Kemar.MBS.Business.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.business\\services\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF242845-F5F8-438B-9E64-A3E52EF5DDA1}|..\\Kemar.MBS.Business\\Kemar.MBS.Business.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.business\\services\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{355C2E71-49B6-404F-BA6D-7A939188C925}|..\\Kemar.MBS.Repository\\Kemar.MBS.Repository.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.repository\\entity\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\screen\\screencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\screen\\screencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.api\\controllers\\seat\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8E46849-10F8-433D-8EC4-60E534EF51EC}|Kemar.MBS.API.csproj|solutionrelative:controllers\\seat\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF242845-F5F8-438B-9E64-A3E52EF5DDA1}|..\\Kemar.MBS.Business\\Kemar.MBS.Business.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.business\\services\\implementations\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\seat\\responses\\seatresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\seat\\responses\\seatbookeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\seat\\requests\\seatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1203497E-C957-4F8E-A402-1724BC566046}|..\\Kemar.MBS.Model\\Kemar.MBS.Model.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\kemar.mbs.model\\seat\\requests\\seatfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Movie\\MovieController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Movie\\MovieController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Movie\\MovieController.cs",
+              "RelativeToolTip": "Controllers\\Movie\\MovieController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T12:42:28.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Response\\ShowResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Show\\Response\\ShowResponseDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Response\\ShowResponseDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Show\\Response\\ShowResponseDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T05:19:31.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Core\\Helper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Core\\Helper\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Core\\Helper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Core\\Helper\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:57:42.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Show\\ShowController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Show\\ShowController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Show\\ShowController.cs",
+              "RelativeToolTip": "Controllers\\Show\\ShowController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:44:32.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CityFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Request\\CityFilterDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\City\\Request\\CityFilterDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Request\\CityFilterDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\City\\Request\\CityFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:40:05.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShowRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Request\\ShowRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Show\\Request\\ShowRequestDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Request\\ShowRequestDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Show\\Request\\ShowRequestDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:32:02.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShowFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Request\\ShowFilterDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Show\\Request\\ShowFilterDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Show\\Request\\ShowFilterDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Show\\Request\\ShowFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:32:02.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TheatreResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Theatre\\Responses\\TheatreResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Theatre\\Responses\\TheatreResponseDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Theatre\\Responses\\TheatreResponseDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Theatre\\Responses\\TheatreResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T05:26:03.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TheatreFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Theatre\\Requests\\TheatreFilterDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Theatre\\Requests\\TheatreFilterDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Theatre\\Requests\\TheatreFilterDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Theatre\\Requests\\TheatreFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:54:19.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Show.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Show.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Entity\\Show.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Show.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Entity\\Show.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T07:44:48.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\City.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Entity\\City.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\City.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Entity\\City.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:40:31.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CityRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\CityRepository.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\CityRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\CityRepository.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\CityRepository.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:40:40.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookingRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Booking\\Request\\BookingRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Booking\\Request\\BookingRequestDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Booking\\Request\\BookingRequestDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Booking\\Request\\BookingRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T11:51:04.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShowRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\ShowRepository.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\ShowRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\ShowRepository.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\ShowRepository.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAwGUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T05:37:40.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CityService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\CityService.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Business\\Services\\Implementations\\CityService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\CityService.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Business\\Services\\Implementations\\CityService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:39:52.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CityResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Response\\CityResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\City\\Response\\CityResponseDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Response\\CityResponseDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\City\\Response\\CityResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:40:20.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Booking\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Booking\\BookingController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Booking\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\Booking\\BookingController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwCwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T11:52:15.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CityRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Request\\CityRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\City\\Request\\CityRequestDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\City\\Request\\CityRequestDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\City\\Request\\CityRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:40:06.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Booking.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Entity\\Booking.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Booking.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Entity\\Booking.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wBYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:45:58.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookingSeat.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\BookingSeat.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Entity\\BookingSeat.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\BookingSeat.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Entity\\BookingSeat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:45:57.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\City\\CityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\City\\CityController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\City\\CityController.cs",
+              "RelativeToolTip": "Controllers\\City\\CityController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T07:39:13.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\User\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\User\\UserController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\User\\UserController.cs",
+              "RelativeToolTip": "Controllers\\User\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:40:06.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Repositories\\Interfaces\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:55:42.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Repositories\\Implementations\\BookingRepository.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Repositories\\Implementations\\BookingRepository.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv1cAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:54:27.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Business\\Services\\Interfaces\\IBookingService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Business\\Services\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:49:55.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\BookingService.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Business\\Services\\Implementations\\BookingService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\BookingService.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Business\\Services\\Implementations\\BookingService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T11:51:23.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Seat.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Seat.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Repository\\Entity\\Seat.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Repository\\Entity\\Seat.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Repository\\Entity\\Seat.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:55:50.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ScreenController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Screen\\ScreenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Screen\\ScreenController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Screen\\ScreenController.cs",
+              "RelativeToolTip": "Controllers\\Screen\\ScreenController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:33:02.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SeatService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\SeatService.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Business\\Services\\Implementations\\SeatService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Business\\Services\\Implementations\\SeatService.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Business\\Services\\Implementations\\SeatService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:57:07.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SeatController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Seat\\SeatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Seat\\SeatController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.API\\Controllers\\Seat\\SeatController.cs",
+              "RelativeToolTip": "Controllers\\Seat\\SeatController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAA4wDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:57:30.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SeatResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Responses\\SeatResponseDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Seat\\Responses\\SeatResponseDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Responses\\SeatResponseDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Seat\\Responses\\SeatResponseDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:56:54.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SeatBookedDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Responses\\SeatBookedDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Seat\\Responses\\SeatBookedDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Responses\\SeatBookedDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Seat\\Responses\\SeatBookedDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:56:47.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SeatRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Requests\\SeatRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Seat\\Requests\\SeatRequestDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Requests\\SeatRequestDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Seat\\Requests\\SeatRequestDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:56:36.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SeatFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Requests\\SeatFilterDto.cs",
+              "RelativeDocumentMoniker": "..\\Kemar.MBS.Model\\Seat\\Requests\\SeatFilterDto.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\Kemar.MBS.Model\\Seat\\Requests\\SeatFilterDto.cs",
+              "RelativeToolTip": "..\\Kemar.MBS.Model\\Seat\\Requests\\SeatFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:56:30.222Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

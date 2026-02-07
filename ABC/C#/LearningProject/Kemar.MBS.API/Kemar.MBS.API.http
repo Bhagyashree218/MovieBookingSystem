@@ -1,0 +1,6 @@
+@Kemar.MBS.API_HostAddress = http://localhost:5224
+
+GET {{Kemar.MBS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

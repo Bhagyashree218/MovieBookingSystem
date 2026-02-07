@@ -1,0 +1,11 @@
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\bin\Debug\net8.0\Kemar.Add.Model.deps.json
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\bin\Debug\net8.0\Kemar.Add.Model.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\bin\Debug\net8.0\Kemar.Add.Model.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.AssemblyInfoInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.AssemblyInfo.cs
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.csproj.CoreCompileInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\refint\Kemar.Add.Model.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\Kemar.Add.Model.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Model\obj\Debug\net8.0\ref\Kemar.Add.Model.dll

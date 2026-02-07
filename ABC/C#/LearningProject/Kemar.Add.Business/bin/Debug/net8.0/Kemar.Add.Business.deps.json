@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Kemar.Add.Business/1.0.0": {
+        "dependencies": {
+          "Kemar.Add.Model": "1.0.0",
+          "Kemar.Add.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Kemar.Add.Business.dll": {}
+        }
+      },
+      "Kemar.Add.Model/1.0.0": {
+        "runtime": {
+          "Kemar.Add.Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kemar.Add.Repository/1.0.0": {
+        "dependencies": {
+          "Kemar.Add.Model": "1.0.0"
+        },
+        "runtime": {
+          "Kemar.Add.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kemar.Add.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kemar.Add.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kemar.Add.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

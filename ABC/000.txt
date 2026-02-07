@@ -1,0 +1,81 @@
+bhagyashree.thorat@kemarautomation.in
+
+--Remote Desktop coonnection
+192.168.1.205
+
+KEMARAUTOMATION\Administrator
+Kemar@123
+
+This pc
+Kshare (Z)
+
+
+-- SQL server
+DESKTOP-SM1GHEV\SQLEXPRESS
+Bhagyashree
+Pass@123
+
+--utdolvi UI login
+superadmin
+Pass@1@2@3
+
+Services
+SQL Server (SQLEXPRESS)
+start/stop
+
+
+-- VS (Dot Net)
+open .sln file
+--vs code (angular)
+open project folder
+open cmd and the below command
+code .
+
+
+to install node_modules
+npm install --force
+
+
+ng version
+node -v
+
+nvm version
+1.2.2
+nvm install 16.20.2
+nvm use 16.20.2
+--to check which version using
+nvm ls	
+ * 22.20.0 (Currently using 64-bit executable)
+
+
+nvm install v18.19.1
+nvm use 18.19.1
+
+ng version (utdolvi)
+Angular CLI: 14.2.13
+Node: 16.20.2
+Package Manager: npm 8.19.4
+
+npm install force
+
+ng serve
+npx ng serve
+
+
+--azure UTVijaynagar
+https://dev.azure.com/kpapl/UTVijaynagar/_git/UTVijaynagar
+--azure GOAYMS
+I. open project link sent to you on teams
+II. paste it in browser and login using kemardev1@outlook.com 
+    (for password contact neelam &
+    in accnt bhagyashree.thorat@outlook.in the pass for kemardev1@outlook.com is saved)
+III. it will open azure project code link page
+    copy that url and 
+IV. paste it in the git bash using command
+    git clone link
+    eg.
+git clone https://dev.azure.com/kpapl/GOAYMS/_git/GOAYMS
+
+
+
+Updates in database 1. removed existing refresh token and added new one

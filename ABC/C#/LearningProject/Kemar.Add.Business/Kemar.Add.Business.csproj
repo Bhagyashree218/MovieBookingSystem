@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kemar.Add.Model\Kemar.Add.Model.csproj" />
+    <ProjectReference Include="..\Kemar.Add.Repository\Kemar.Add.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

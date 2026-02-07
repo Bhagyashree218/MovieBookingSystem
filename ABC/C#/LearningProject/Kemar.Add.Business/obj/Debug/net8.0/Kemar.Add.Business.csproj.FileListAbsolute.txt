@@ -1,0 +1,17 @@
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Business.deps.json
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Business.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Business.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Model.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Repository.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Model.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\bin\Debug\net8.0\Kemar.Add.Repository.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.csproj.AssemblyReference.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.AssemblyInfoInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.AssemblyInfo.cs
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.csproj.CoreCompileInputs.cache
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Ad.D67674FE.Up2Date
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\refint\Kemar.Add.Business.dll
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\Kemar.Add.Business.pdb
+C:\Users\Bhagyashree Thorat\Desktop\Bhagyashree\DotNet\C#\LearningProject\Kemar.Add.Business\obj\Debug\net8.0\ref\Kemar.Add.Business.dll

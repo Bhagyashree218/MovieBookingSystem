@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:services\\interfaces\\imessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:services\\implementations\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\services\\implementations\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:services\\implementations\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\repositories\\implementations\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:repositories\\implementations\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\repositories\\interfaces\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:repositories\\interfaces\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\diexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:diexample.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|c:\\users\\bhagyashree thorat\\desktop\\bhagyashree\\dotnet\\c#\\learningproject\\diexample\\migrations\\20251120130219_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{083C860C-7A1D-4E2C-A1CF-6567A2021EEF}|DIExample.csproj|solutionrelative:migrations\\20251120130219_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Repositories\\Implementations\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\NotificationRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Repositories\\Implementations\\NotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\NotificationRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:04:20.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Models\\Notification.cs",
+              "RelativeToolTip": "Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:50:42.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-20T10:48:53.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:53:01.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Implementations\\MessageService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\MessageService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Implementations\\MessageService.cs",
+              "RelativeToolTip": "Services\\Implementations\\MessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:32:03.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Interfaces\\IMessageService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IMessageService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Interfaces\\IMessageService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:23:44.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Repositories\\Interfaces\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\INotificationRepository.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Repositories\\Interfaces\\INotificationRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\INotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:55:49.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Interfaces\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\INotificationService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Interfaces\\INotificationService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\INotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:22:27.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Implementations\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Services\\Implementations\\NotificationService.cs",
+              "RelativeToolTip": "Services\\Implementations\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:28:36.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T04:39:03.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:34:28.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "Controllers\\NotificationController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T10:43:10.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20251120130219_Init.cs",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Migrations\\20251120130219_Init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251120130219_Init.cs",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\Migrations\\20251120130219_Init.cs",
+              "RelativeToolTip": "Migrations\\20251120130219_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T13:02:19.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DIExample.csproj",
+              "DocumentMoniker": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\DIExample.csproj",
+              "RelativeDocumentMoniker": "DIExample.csproj",
+              "ToolTip": "C:\\Users\\Bhagyashree Thorat\\Desktop\\Bhagyashree\\DotNet\\C#\\LearningProject\\DIExample\\DIExample.csproj",
+              "RelativeToolTip": "DIExample.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-20T12:59:24.444Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

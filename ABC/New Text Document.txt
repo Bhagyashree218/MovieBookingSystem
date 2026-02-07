@@ -1,0 +1,96 @@
+To do next
+- add logistics project on git
+- check if there is anything pending to backup
+- 
+
+http://localhost:4200/yard-entry-exit-report
+
+
+plant out happens with reader but 
+get in doesnt
+Reader not working at Get In 
+check out if it already exist
+if code already exist make it work
+if not, add
+
+
+if weighbridge transaction status is completed only then the jobmilestone should status should get completed
+
+What this actually does
+It only:
+Cancels the last weighbridge transaction row
+Reopens milestone
+But it does NOT block future updates
+So later:
+AX4 sends new weight
+System accepts it
+New GW is written again
+💥 That is the exact bug.
+
+
+2. Some vehicles are showing as AX4 remark is underweight/overweight , but in Urge Truck, they are proceeding to invoicing.
+As soon as AX4 writes that remark
+Urge Truck:
+❌ Does NOT enter invoicing logic
+❌ Does NOT move to next milestone
+✅ Forces Sales Audit
+
+Fixed: this bug will not occur anymore
+✅ Vehicles with AX4 under/overweight remarks cannot reach invoicing
+
+
+✅ Current situation (confirmed)
+
+Right now your code has this order inside
+getNextMilestoneDetailAsync() 👇
+
+if (lastWeghmentDetail.Status == MilestoneStatusConstants.Cancelled && ...)
+{
+    ...
+}
+else if (lastWeghmentDetail.Status != MilestoneStatusConstants.Completed)
+{
+    ...
+    return returnMessage;
+}
+else if (lastWeghmentDetail.Status == MilestoneStatusConstants.Completed
+         && lastWeghmentDetail.Remarks == "Overweight, Connect Sales Audit.")
+{
+    retValue = "SALESAUDIT";
+}
+else
+{
+    // approval / next milestone / invoicing
+}
+
+⚠️ This is WHY the bug exists.
+
+
+✅ Final correct order (ONLY relevant part)
+if (lastWeghmentDetail.Status == MilestoneStatusConstants.Cancelled && ...)
+{
+    ...
+}
+else if (lastWeghmentDetail.Status == MilestoneStatusConstants.Completed
+         && lastWeghmentDetail.Remarks == "Overweight, Connect Sales Audit.")
+{
+    retValue = "SALESAUDIT";
+}
+else if (lastWeghmentDetail.Status != MilestoneStatusConstants.Completed)
+{
+    ...
+    return returnMessage;
+}
+else
+{
+    // approval / next milestone / invoicing
+}
+
+
+
+
+
+
+BuildAX4Request(AX4UpdateMilestoneRequest requestModel, int jobMilestoneId, string milestoneCode, NotificationRequestDto notificationModel, bool reTrigger)
+        {
+
